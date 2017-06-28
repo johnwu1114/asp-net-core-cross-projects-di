@@ -8,6 +8,10 @@ namespace MyWebsite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<ISampleTransient, Sample>();
+            services.AddScoped<ISampleScoped, Sample>();
+            services.AddSingleton<ISampleSingleton, Sample>();
+            services.AddTransient<SampleService, SampleService>();
         }
 
         public void Configure(IApplicationBuilder app)
