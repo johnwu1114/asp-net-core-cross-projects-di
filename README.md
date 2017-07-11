@@ -10,6 +10,10 @@ Use the Visual Studio 2017 to development.
 Blog：  
 [ASP.NET Core 範例 - 跨專案 DI](https://blog.johnwu.cc/article/asp-net-core-cross-projects-di.html)
 
+相關文章：  
+[ASP.NET Core 教學 - Dependency Injection](/article/asp-net-core-dependency-injection.html)  
+[ASP.NET Core 教學 - 自訂組態設定檔](/article/asp-net-core-configuration.html)  
+
 開發工具：  
 Visual Studio 2017 (可使用其他版，只要有支援 ASP.NET Core 開發就可以。)
 
