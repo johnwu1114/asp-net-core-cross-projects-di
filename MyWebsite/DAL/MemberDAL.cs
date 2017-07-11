@@ -1,20 +1,16 @@
 ﻿using DAL.Interfaces;
-using DAO;
+using Entities;
 using Microsoft.Extensions.Configuration;
 
 namespace DAL
 {
-    public class MemberDAL : IMemberDAL
+    public class MemberDAL : AbstractBaseDAL, IMemberDAL
     {
-        private readonly string _dbConnectionString;
-
-        public MemberDAL(IConfigurationRoot config)
+        public MemberDAL(IConfigurationRoot config) : base(config)
         {
-            _dbConnectionString = config["DbConnection"];
-            // Do something...
         }
 
-        public void CreateMember(MemberDAO member)
+        public void CreateMember(Member member)
         {
             // Do something...
         }

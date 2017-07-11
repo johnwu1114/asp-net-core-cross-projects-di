@@ -1,9 +1,9 @@
-﻿using DAO;
+﻿using Entities;
 
 namespace DAL.Interfaces
 {
     public interface IMemberDAL
     {
-        void CreateMember(MemberDAO member);
+        void CreateMember(Member member);
     }
 }

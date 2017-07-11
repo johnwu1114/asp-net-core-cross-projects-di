@@ -1,9 +1,9 @@
-﻿using DAO;
+﻿using Entities;
 
 namespace BLL.Interfaces
 {
     public interface IMemberBLL
     {
-        void Register(MemberDAO member);
+        void Register(Member member);
     }
 }

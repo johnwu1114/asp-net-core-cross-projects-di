@@ -20,8 +20,8 @@ namespace MyWebsite
             services.AddTransient<SampleService, SampleService>();
 
             services.AddSingleton(GetSettings());
-            services.AddSingleton<IMemberDAL, MemberDAL>();
-            services.AddSingleton<IMemberBLL, MemberBLL>();
+            services.AddTransient<IMemberDAL, MemberDAL>();
+            services.AddTransient<IMemberBLL, MemberBLL>();
         }
 
         public void Configure(IApplicationBuilder app)

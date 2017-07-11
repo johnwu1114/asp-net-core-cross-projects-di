@@ -1,6 +1,6 @@
 ﻿using BLL.Interfaces;
 using DAL.Interfaces;
-using DAO;
+using Entities;
 
 namespace BLL
 {
@@ -13,7 +13,7 @@ namespace BLL
             _memberDAL = memberDAL;
         }
 
-        public void Register(MemberDAO member)
+        public void Register(Member member)
         {
             // Do something...
             _memberDAL.CreateMember(member);
